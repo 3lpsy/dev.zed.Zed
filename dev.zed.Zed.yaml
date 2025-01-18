@@ -1,8 +1,8 @@
 # dev.zed.Zed.yaml
 app-id: dev.zed.Zed
-runtime: org.freedesktop.Sdk
-runtime-version: '24.08'
-sdk: org.freedesktop.Sdk
+runtime: org.gnome.Sdk
+runtime-version: "46"
+sdk: org.gnome.Sdk
 command: zed-wrapper
 separate-locales: false
 finish-args:
@@ -41,8 +41,8 @@ modules:
       - /share/info
       - /share/man
       - /share/pkgconfig
-      - '*.a'
-      - '*.la'
+      - "*.a"
+      - "*.la"
     config-opts:
       - -Dgtk_doc=false
       - -Dintrospection=false
@@ -118,9 +118,9 @@ modules:
       - -Dsdk_update_template=sdk_update.md
       - -Dflagfile_prefix=flatpak-zed
       - -Ddefault_loglevel=0
+      - -Dsdk_version=46.0
     sources:
       - type: git
-        commit: 3314b55ccd4ece8810715787e246f8407e20caab
         url: https://github.com/flathub-infra/ide-flatpak-wrapper
       - type: file
         path: README.md
