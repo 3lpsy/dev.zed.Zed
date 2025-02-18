@@ -1,5 +1,7 @@
 # Flatpak Zed
 
+Fork of Zed Flatpak that uses Gnome's SDK as a runtime in order to gain access to additional libraries.
+
 ## Issues
 Please open issues under: https://github.com/flathub/dev.zed.Zed/issues
 
